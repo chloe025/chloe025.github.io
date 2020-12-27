@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site Chloé</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="icon" href="https://avatars2.githubusercontent.com/u/63238911?s=400&u=32d4cd07ded818e035996957ad31ce76636a9dbb&v=4" type="image/x-icon">
+
+    <link rel="stylesheet" href="../style/carousel.css">
+    <link rel ="stylesheet" href="../style/style.css"/>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mon Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mes réalisations</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="lycee.html">Lycée</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">DUT Informatique</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Mon CV</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carousel_cv" class="carousel carousel-dark slide" data-bs-ride="carousel" >
+        <!-- indicators for carousel -->
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carousel_cv" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carousel_cv" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carousel_cv" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carousel_cv" data-bs-slide-to="3"></li>
+            <li data-bs-target="#carousel_cv" data-bs-slide-to="4"></li>
+            <li data-bs-target="#carousel_cv" data-bs-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner" style="height: 100%;">
+            <div class="carousel-item active one">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Bonjour ! Je suis Chloé</h1>
+                        <hr>
+                        <p>Dans ce petit carousel Bootstrap, je vais me présenter. Vous pouvez descendre ou cliquer sur les boutons du carousel pour avoir davantage d'informations !</p>
+                        <p>Vous pouvez sinon télécharger mon CV sur ce bouton !</p>
+                        <a class="btn btn-lg btn-info mt-5" href="../cv_zannier.pdf" target="_blank" download role="button">Téléchargez-moi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item two">
+                <div class="container">
+                    <div class="carousel-caption text-dark">
+                        <h1>Présentation rapide</h1>
+                        <hr>
+                        <p class="d-none d-md-block">J'ai 19ans, bientôt 20 en août prochain. Je vis dans un petit village perdu en Moselle nommé Ottonville, où il y a plus d'animaux que d'habitants. <br>
+                        Je suis une personne curieuse et assez calme, aimant toujours apprendre de nouvelles choses</p>
+                        <p><a class="btn btn-lg btn-info mt-5" href="#me" role="button">Ma présentation</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item three">
+                <div class="container">
+                    <div class="carousel-caption text-dark">
+                        <h1>Mes études</h1>
+                        <hr>
+                        <div class="d-none d-md-block">
+                            <h3>DUT Informatique (2019-2021)</h3>
+                            <p>Je suis actuellement en 2ème année de DUT Informatique à l'IUT de Metz, en Lorraine. Je fus première et cinquième de promotion la première année. <br>
+                            J'ai pu apprendre les bases du développement d'applications, de développement web et plein d'autres choses plus précises !</p>
+                            <h3>Lycée (2019)</h3>
+                            <p>J'ai obtenu mon BAC Scientifique option "Informatique et Sciences du Numérique" en 2019, mention     Bien. J'y ai découvert les bases de l'informatique, et de la programmation web.</p> 
+                        </div>
+                        <p><a class="btn btn-lg btn-info" href="#etudes" role="button">Voir les détails de mes études</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item four">
+                <div class="container">
+                    <div class="carousel-caption text-dark">
+                        <h1>Mes loisirs</h1>
+                        <hr>
+                        <p class="d-none d-md-block">En dehors du développement, j'ai plusieurs autres loisirs. J'essaie de m'interesser à tout et apprécie apprendre de nouvelles choses chaque jours.<br>
+                            Je m'intéresse beaucoup à la géologie et au volcanisme, mais aussi aux sciences en général. J'aime beaucoup jouer aux jeux vidéos, que ce soit seule, avec mes amis ou des inconnus du monde entier.<br>
+                            Sinon j'apprécie beaucoup la compagnie de divers romans, qui peuvent me tenir occupée pendant plusieurs jours.
+                        </p>
+                        <p><a class="btn btn-lg btn-info" href="#hobby" role="button">Précisions sur mes loisirs</a></p>
+                    </div>                        
+                </div>
+            </div>
+            <div class="carousel-item five">
+                <div class="container">
+                    <!-- hide on screns smaller than MD -->
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Mes autres diplômes</h1>
+                        <hr>
+                        <p>Je suis titulaire depuis 2015 du Certificat de Prévention et Secours Civiques de niveau 1. Par conséquent, je suis capable d'effectuer les gestes de premiers secours.<br>
+                            Je possède également le Cambridge English Certificate de niveau B2.<br>
+                            J'ai le permis voiture depuis 2019 ainsi que le permis piéton depuis mes 7 ans.
+                        </p>
+                        <h1>Langues parlées</h1>
+                        <hr>
+                        <p>J'ai le niveau B2 en anglais, et quelques notions d'allemand
+                        </p>
+                    </div>   
+                    <!-- only on screens smaller than MD -->
+                    <div class="carousel-caption d-md-none">
+                        <h1>Mes autres diplômes</h1>
+                        <hr>
+                        <p>Je suis titulaire depuis 2015 du Certificat de Prévention et Secours Civiques de niveau 1.
+                            Je possède également le Cambridge English Certificate de niveau B2.
+                            J'ai le permis voiture depuis 2019.
+                        </p>
+                        <h1>Langues parlées</h1>
+                        <hr>
+                        <p>J'ai le niveau B2 en anglais, et quelques notions d'allemand
+                        </p>
+                    </div>                     
+                </div>
+            </div>
+            <div class="carousel-item six">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Mes compétences</h1>
+                        <hr>
+                        <p class="">Durant mes études, j'ai eu l'occasion de découvrir et manipuler plusieurs langages différents, que ce soit du simple HTML/CSS, du C, Java ou encore de l'assembleur 80/86 par exemple.<br><br>
+                            J'ai aussi pu manipuler divers logiciels dans le cadre de projets ou devoirs comme les éditeurs de textes, PowerPoint, des IDE, ou encore d'autres logiciels pour des projets personnels comme GIMP2 ou Premiere Pro CC.
+                        </p>
+                        <p><a class="btn btn-lg btn-primary" href="#skill" role="button">Mes compétences</a></p>
+                    </div>                        
+                </div>
+            </div>
+        </div>    
+        <!-- carousel controls -->
+        <a class="carousel-control-prev" href="#carousel_cv" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carousel_cv" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>       
+    </div>
+    <!-- Marketing messaging and featurettes -->
+    <!-- ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+    
+    <div class="container marketing">
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="me">
+            <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden rounded">
+                <div class="my-3 p-3">
+                    <h2 class="display-5">Qui suis-je</h2>
+                    <p class="lead">Chloé ZANNIER</p>
+                </div>
+                <div class="bg-dark shadow-sm mx-auto text-light  pt-2" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+                    <p>Je suis une étudiante en 2<sup>ème</sup> année de DUT Informatique à l'Université de Lorraine. <br>
+                        Ce que j'apprécie le plus dans cette discipline est la gestion d’un projet de A à Z (je suis toujours en constante recherche d’optimisation + résolution de problèmes). C'est en partie grâce à cela que j’ai pu réaliser différents projets en Assembleur, en Web ou encore en C. <br><br>
+                        Moyens de contact : <br><br>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i> 11 rue de Mazerolles, Ottonville, 57220<br>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:zannierchloe@gmail.com" class="text-white">zannierchloe@gmail.com</a><br>
+                        <i class="fa fa-mobile" aria-hidden="true"></i> (+33) 07 70 44 80 33 <br>
+                        <a class="text-white"href="https://github.com/chloe025" target="_blank"><i class="fa fa-github" aria-hidden="true"></i> Github</a><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- START THE FEATURETTES -->
+        <hr class="featurette-divider">
+        <div class="row featurette" id="etudes">
+            <div class="col-md-8">
+                <h2 class="featurette-heading mt-0">Mes études <br><span class="text-muted">Diplôme Universitaire Technologique (DUT) d'Informatique à Metz (2019-2021)</span></h2>
+                <p class="lead text-justify">Durant ces deux années de DUT informatique à l'IUT de metz, j'ai pu assimiler de nombreuses connaissances.<br>
+                    J'ai pu aquérir de bonnes bases en algorithmie, que j'ai pu mettre en pratique lors de différents projets, que vous pouvez voir sur la page de mes <a href="#">réalistations</a>. J'ai pu faire de la programmation web, en HTML, CSS, PHP et un peu de JavaScript. En autodidacte, je me suis orientée vers le Bootstrap 4 pour completer mes connaissances dans ce domaine. J'ai aussi eu des cours de programmation orientée objet, et de gestions de bases de données à l'aide de MySQL. En première année, j'ai eu la chance de suivre des cours d'Assembleur, qui m'ont permise de mieux comprendre le fonctionnement de nos machines, car il s'agit d'un langage de bas niveau, composé d'instructions directement compréhensibles par le microprocesseur. <br> Nous avons aussi pu avoir des cours de réseau, nous donnant les bases des adressages TCP-IP, de routage et de fonctionnement de réseaux informatiques.<br>
+                    Pour parfaire nos connaissances en informatique, j'ai pu avoir des cours d'économie, de droit, de mathématiques et d'expression & communications pour agrandir nos domaines de connaissances. Par conséquent, je dispose de notions dans plusieurs domaines différents, ce qui me permet de comprendre mon environnement et de m'adapter plus rapidement. 
+                </p>
+            </div>
+            <div class="col-md-4">
+                <div class="row">
+                    <img src="https://dptinfo.iutmetz.univ-lorraine.fr/img/Logo_IUT_Metz.Info_UL.small.png" class="class=bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" >
+                </div>
+                <div class="row">
+                    <img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="class=bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+                <div class="row">
+                    <img src="https://images.pexels.com/photos/2068478/pexels-photo-2068478.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="class=bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="200" height="100" >
+                </div>
+            </div>
+        </div>
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="text-muted">BAC S à Félix Mayer à Creutzwald (2019) </h2>
+                <p class="lead text-justify">
+                    J'ai obtenu mon Baccalauréat Scientifique option "Informatique et Sciences du Numérique" en 2019, avec une mention Bien.<br>
+                    C'est à ce moment là que j'ai commencé l'informatique : en classe de Première, j'ai choisi l'option "Informatique et Création Numérique" par curiosité et dans le but de découvrir un nouveau domain qui m'interessait. J'ai appris le HTML 5 et le CSS 3, et j'avais essayé de faire du JavaScript en autodidacte. Je me suis servie de mes connaissances apprises pour développer mon site de soutenance de TPE (Travaux Personnels Encadrés), disponible aussi dans mes réalisations. En classe de Terminale, j'ai choisi d'en faire ma spécialité pour l'épreuve du BAC. Nous avons du réaliser un jeu en language Python, ce qui m'a permit d'aquérir rapidement des bases d'algorithmie et de travail en équipe.
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <div class="row">
+                    <img src="https://th.bing.com/th/id/OIP.AGHJvMeXlJv9SfllGRz6FgHaCv?w=313&h=129&c=7&o=5&pid=1.7" class="class=bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                </div>
+            </div>
+
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette" id="hobby">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading mt-0">Mes loisirs</h2>
+                <p class="lead text-justify">
+                    En dehors du développement, j'ai d'autres loisirs. Le premier est le jeu vidéo : c'est principalement grâce à lui que je me suis intéressée à l'informatique. J'apprécie passer du temps à jouer, que ce soit seule ou avec mes amis, qui sont même parfois à l'autre bout du monde. <br>
+                    Je m'interesse aussi aux sciences, notemment à la biologie depuis le lycée ainsi qu'à la géologie que j'apprécie énormément.<br>
+                    Un dernir loisir : la lecture. Souvent, j'entends dire que jeux vidéos et lire des livres ne vont pas ensemble, mais je suis convaincue du contraire. J'adore lire des romans, car ils me permettent d'apprendre du vocabulaire, mais aussi me transportent dans un autre monde pendant quelques temps, au même titre que le gaming.
+                </p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+        <div class="row featurette" id="skill">
+            <h2 class="featurette-heading mt-0">Mes compétences</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="text-muted">Mes compétences en développement</h3>
+                    <table class="table table-bordered align-middle">
+                        <thead>
+                            <tr>
+                                <th>Language</th>
+                                <th>Skills</th>
+                                <th>Remarques supplémentaires
+                                    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Les notations ne correspondent pas a celles du CV car il est plus compliqué de faire des 3/4 d'étoiles, par conséquent la notation est sur 5★"><i class="fa fa-info-circle fa-1" aria-hidden="true"></i></a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">HTML CSS</th>
+                                <td>
+                                    <div class="col d-inline-flex">
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p>★</p>
+                                    </div>
+                                </td>
+                                <td>Utilisation de JS et de bootstrap</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">PHP</th>
+                                <td>
+                                    <div class="col d-inline-flex">
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p>★</p>
+                                    </div> 
+                                </td>
+                                <td>+ Utilisation de Twig et Composer</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Assembleur 80/86</th>
+                                <td>
+                                    <div class="col d-inline-flex">
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>C</th>
+                                <td>
+                                    <div class="col d-inline-flex">
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                    </div>
+                                </td>
+                                <td>Quelques notions de C++</td>
+                            </tr>
+                            <tr>
+                                <th>Java</th>
+                                <td>
+                                    <div class="col d-inline-flex">
+                                        <p class="coulour">★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>MySQL</th>
+                                <td>
+                                    <div class="col d-inline-flex">
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                    </div> 
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Python</th>
+                                <td>
+                                    <div class="col d-inline-flex">
+                                        <p class="coulour">★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="text-muted">Outils utilisést</h3>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nom</th>
+                                <th scope="col">Skills</th>
+                                <th scope="col">Remarques supplémentaires<!--  <a href="#skill" title="Les notations ne correspondent pas a celles du CV car il est plus compliqué de faire des 3/4 d'étoiles, par conséquent la notation est sur 5★"><i class="fa fa-info-circle fa-1" aria-hidden="true"></i></a> -->
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Sublim Text 3</th>
+                                <td>
+                                    <div class="col d-inline-flex">
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p>★</p>
+                                    </div>
+                                </td>
+                                <td>A été utilisé pour la réalisation de ce site</td>
+                            </tr>
+                            <tr>
+                                <th>Eclipse IDE</th>
+                                <td>
+                                    <div class="col d-inline-flex">
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                    </div>
+                                </td>
+                                <td>Manié avec Java Fx</td>
+                            </tr>
+                            <tr>
+                                <th>Code::Block</th>
+                                <td>
+                                    <div class="col d-inline-flex">
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Lazarus</th>
+                                <td>
+                                    <div class="col d-inline-flex">
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                    </div>
+                                </td>
+                                <td>Réalisation d'interfaces graphiques</td>
+                            </tr>
+                            <tr>
+                                <th>Word, Excel, PowerPoint</th>
+                                <td>
+                                    <div class="col d-inline-flex">
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p>★</p>
+                                    </div>
+                                </td>
+                                <td>Ses variantes libres (comme LibreOffice sont aussi maîtrisés)</td>
+                            </tr>
+                            <tr>
+                                <th>Github</th>
+                                <td>
+                                    <div class="col d-inline-flex">
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>GIMP 2</th>
+                                <td>
+                                    <div class="col d-inline-flex">
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>Premiere Pro CC</th>
+                                <td>
+                                    <div class="col d-inline-flex">
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p class="coulour">★</p>
+                                        <p>★</p>
+                                        <p>★</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr class="featurette-divider">
+        <!-- /END THE FEATURETTES -->
+    </div><!-- /.container -->
+    <footer class="footer mt-2 py-1 bg-dark">
+        <div class="container text-center">
+            <span class="text-light">Site réalisé par ZANNIER Chloé.</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/0383df481c.js" crossorigin="anonymous"></script>
+    <!-- enable popopers -->
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+      })
+        var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+          trigger: 'focus'
+      })
+  </script>
+</body>
+</html>

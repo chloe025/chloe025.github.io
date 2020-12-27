@@ -1,0 +1,43 @@
+body {
+  background-color: #c5c8ca
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+.backgr{
+	background: linear-gradient(rgba(0, 0, 0, 0.5), 
+		rgba(0, 0, 0, 0.5)), url("https://www.datacenterplanet.com/wp-content/uploads/2018/03/dc3.jpg")no-repeat fixed;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;	/*mozilla*/
+  background-size: cover;
+  -o-background-size: cover;		/*opera*/
+  height: 90vh;
+  margin: 0;
+  width: 100%;
+  display: flex;
+}
+
+a {
+  color: #0080ff;
+}
+@media (min-width: 990px) {
+  .container {
+   width: 950px; 
+   padding-top: 1%;
+   padding-bottom: 1%;
+ } 
+ .jumbotron{
+   background-color: #c5c8ca
+ }
+ .navbar {
+   height: 10vh;
+ }
+}
+
+.card-text{
+  text-align: justify;
+}
+.bot{
+  bottom: 1rem;
+}
