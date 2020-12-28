@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Mon Site</a>
@@ -30,7 +31,7 @@
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                             <li><a class="dropdown-item" href="lycee.html">Lycée</a></li>
                             <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">DUT Informatique</a></li>
+                            <li><a class="dropdown-item" href="dut.html">DUT Informatique</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -40,6 +41,7 @@
             </div>
         </div>
     </nav>
+    <!-- /navbar -->
 
     <div id="carousel_cv" class="carousel carousel-dark slide" data-bs-ride="carousel" >
         <!-- indicators for carousel -->
@@ -59,7 +61,7 @@
                         <hr>
                         <p>Dans ce petit carousel Bootstrap, je vais me présenter. Vous pouvez descendre ou cliquer sur les boutons du carousel pour avoir davantage d'informations !</p>
                         <p>Vous pouvez sinon télécharger mon CV sur ce bouton !</p>
-                        <a class="btn btn-lg btn-info mt-5" href="../cv_zannier.pdf" target="_blank" download role="button">Téléchargez-moi</a>
+                        <a class="btn btn-lg btn-info mt-5" href="../img/cv_zannier.pdf" target="_blank" download role="button">Téléchargez-moi</a>
                     </div>
                 </div>
             </div>
@@ -154,17 +156,15 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>       
     </div>
-    <!-- Marketing messaging and featurettes -->
+
+    <!-- featurettes -->
     <!-- ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
 
-
-    
-    <div class="container marketing">
+    <div class="container ">
         <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="me">
             <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden rounded">
                 <div class="my-3 p-3">
-                    <h2 class="display-5">Qui suis-je</h2>
+                    <h2 class="display-5">Qui suis-je ?</h2>
                     <p class="lead">Chloé ZANNIER</p>
                 </div>
                 <div class="bg-dark shadow-sm mx-auto text-light  pt-2" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
@@ -191,18 +191,16 @@
                 </p>
             </div>
             <div class="col-md-4">
-                <div class="row">
-                    <img src="https://dptinfo.iutmetz.univ-lorraine.fr/img/Logo_IUT_Metz.Info_UL.small.png" class="class=bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" >
+                <div class="row ">
+                    <img src="https://dptinfo.iutmetz.univ-lorraine.fr/img/Logo_IUT_Metz.Info_UL.small.png" class="class=bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="logo univer de Lorraine et du département Informatique de l'IUT de Metz" >
                 </div>
+                <hr>
                 <div class="row">
-                    <img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="class=bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
-                </div>
-                <div class="row">
-                    <img src="https://images.pexels.com/photos/2068478/pexels-photo-2068478.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="class=bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="200" height="100" >
+                    <img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="class=bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="image de code html">
                 </div>
             </div>
         </div>
-        <div class="row featurette">
+        <div class="row featurette mt-3">
             <div class="col-md-7 order-md-2">
                 <h2 class="text-muted">BAC S à Félix Mayer à Creutzwald (2019) </h2>
                 <p class="lead text-justify">
@@ -212,14 +210,14 @@
             </div>
             <div class="col-md-5 order-md-1">
                 <div class="row">
-                    <img src="https://th.bing.com/th/id/OIP.AGHJvMeXlJv9SfllGRz6FgHaCv?w=313&h=129&c=7&o=5&pid=1.7" class="class=bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto">
+                    <img src="https://th.bing.com/th/id/OIP.AGHJvMeXlJv9SfllGRz6FgHaCv?w=313&h=129&c=7&o=5&pid=1.7" class="class=bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" alt="logo du lycée Felix Mayer">
                 </div>
             </div>
 
         </div>
         <hr class="featurette-divider">
         <div class="row featurette" id="hobby">
-            <div class="col-md-7 order-md-2">
+            <div class="col-md-5 order-md-2">
                 <h2 class="featurette-heading mt-0">Mes loisirs</h2>
                 <p class="lead text-justify">
                     En dehors du développement, j'ai d'autres loisirs. Le premier est le jeu vidéo : c'est principalement grâce à lui que je me suis intéressée à l'informatique. J'apprécie passer du temps à jouer, que ce soit seule ou avec mes amis, qui sont même parfois à l'autre bout du monde. <br>
@@ -227,264 +225,278 @@
                     Un dernir loisir : la lecture. Souvent, j'entends dire que jeux vidéos et lire des livres ne vont pas ensemble, mais je suis convaincue du contraire. J'adore lire des romans, car ils me permettent d'apprendre du vocabulaire, mais aussi me transportent dans un autre monde pendant quelques temps, au même titre que le gaming.
                 </p>
             </div>
-            <div class="col-md-5 order-md-1">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-            </div>
-        </div>
+            <div class="col-md-3 order-md-1">
+                <div class="row">
+                    <img src="https://images.pexels.com/photos/139038/pexels-photo-139038.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="img-thumbnail" alt="image de manette xbox one">
+                </div>
+                <div class="row">
+                    <img src="https://cdn.pixabay.com/photo/2016/08/24/16/20/books-1617327_960_720.jpg" class="img-thumbnail" alt="bibliothèque de livres">
+                </div>
 
-        <hr class="featurette-divider">
-        <div class="row featurette" id="skill">
-            <h2 class="featurette-heading mt-0">Mes compétences</h2>
+            </div>
+            <div class="col-md-3 order-md-3">
+             <div class="row">
+                <img src="https://cdn.pixabay.com/photo/2018/11/07/20/13/northern-ireland-3801174_960_720.jpg" class="img-thumbnail" alt="chaussée des géants (Giant Causeway), en Irlande">
+            </div>
             <div class="row">
-                <div class="col-md-6">
-                    <h3 class="text-muted">Mes compétences en développement</h3>
-                    <table class="table table-bordered align-middle">
-                        <thead>
-                            <tr>
-                                <th>Language</th>
-                                <th>Skills</th>
-                                <th>Remarques supplémentaires
-                                    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Les notations ne correspondent pas a celles du CV car il est plus compliqué de faire des 3/4 d'étoiles, par conséquent la notation est sur 5★"><i class="fa fa-info-circle fa-1" aria-hidden="true"></i></a>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">HTML CSS</th>
-                                <td>
-                                    <div class="col d-inline-flex">
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p>★</p>
-                                    </div>
-                                </td>
-                                <td>Utilisation de JS et de bootstrap</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">PHP</th>
-                                <td>
-                                    <div class="col d-inline-flex">
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p>★</p>
-                                    </div> 
-                                </td>
-                                <td>+ Utilisation de Twig et Composer</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Assembleur 80/86</th>
-                                <td>
-                                    <div class="col d-inline-flex">
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                    </div>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th>C</th>
-                                <td>
-                                    <div class="col d-inline-flex">
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                    </div>
-                                </td>
-                                <td>Quelques notions de C++</td>
-                            </tr>
-                            <tr>
-                                <th>Java</th>
-                                <td>
-                                    <div class="col d-inline-flex">
-                                        <p class="coulour">★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                    </div>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th>MySQL</th>
-                                <td>
-                                    <div class="col d-inline-flex">
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                    </div> 
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th>Python</th>
-                                <td>
-                                    <div class="col d-inline-flex">
-                                        <p class="coulour">★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                    </div>
-                                </td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col-md-6">
-                    <h3 class="text-muted">Outils utilisést</h3>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Nom</th>
-                                <th scope="col">Skills</th>
-                                <th scope="col">Remarques supplémentaires<!--  <a href="#skill" title="Les notations ne correspondent pas a celles du CV car il est plus compliqué de faire des 3/4 d'étoiles, par conséquent la notation est sur 5★"><i class="fa fa-info-circle fa-1" aria-hidden="true"></i></a> -->
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Sublim Text 3</th>
-                                <td>
-                                    <div class="col d-inline-flex">
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p>★</p>
-                                    </div>
-                                </td>
-                                <td>A été utilisé pour la réalisation de ce site</td>
-                            </tr>
-                            <tr>
-                                <th>Eclipse IDE</th>
-                                <td>
-                                    <div class="col d-inline-flex">
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                    </div>
-                                </td>
-                                <td>Manié avec Java Fx</td>
-                            </tr>
-                            <tr>
-                                <th>Code::Block</th>
-                                <td>
-                                    <div class="col d-inline-flex">
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                    </div>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th>Lazarus</th>
-                                <td>
-                                    <div class="col d-inline-flex">
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                    </div>
-                                </td>
-                                <td>Réalisation d'interfaces graphiques</td>
-                            </tr>
-                            <tr>
-                                <th>Word, Excel, PowerPoint</th>
-                                <td>
-                                    <div class="col d-inline-flex">
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p>★</p>
-                                    </div>
-                                </td>
-                                <td>Ses variantes libres (comme LibreOffice sont aussi maîtrisés)</td>
-                            </tr>
-                            <tr>
-                                <th>Github</th>
-                                <td>
-                                    <div class="col d-inline-flex">
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                    </div>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th>GIMP 2</th>
-                                <td>
-                                    <div class="col d-inline-flex">
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                    </div>
-                                </td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th>Premiere Pro CC</th>
-                                <td>
-                                    <div class="col d-inline-flex">
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p class="coulour">★</p>
-                                        <p>★</p>
-                                        <p>★</p>
-                                    </div>
-                                </td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <img src="https://cdn.pixabay.com/photo/2014/04/17/23/26/environmental-protection-326923_960_720.jpg" class="img-thumbnail" alt="nature, arbre dans boule en verre">
             </div>
         </div>
-        <hr class="featurette-divider">
-        <!-- /END THE FEATURETTES -->
-    </div><!-- /.container -->
-    <footer class="footer mt-2 py-1 bg-dark">
-        <div class="container text-center">
-            <span class="text-light">Site réalisé par ZANNIER Chloé.</span>
-        </div>
-    </footer>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
-    </script>
-    <script src="https://kit.fontawesome.com/0383df481c.js" crossorigin="anonymous"></script>
-    <!-- enable popopers -->
-    <script>
-        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-          return new bootstrap.Popover(popoverTriggerEl)
-      })
-        var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
-          trigger: 'focus'
-      })
-  </script>
+    <hr class="featurette-divider">
+    <div class="row featurette" id="skill">
+        <h2 class="featurette-heading mt-0">Mes compétences</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-muted">Mes compétences en développement</h3>
+                <table class="table table-bordered align-middle">
+                    <thead>
+                        <tr>
+                            <th>Language</th>
+                            <th>Skills</th>
+                            <th>Remarques supplémentaires
+                                <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Les notations ne correspondent pas a celles du CV car il est plus compliqué de faire des 3/4 d'étoiles, par conséquent la notation est sur 5★"><i class="fa fa-info-circle fa-1" aria-hidden="true"></i></a>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">HTML CSS</th>
+                            <td>
+                                <div class="col d-inline-flex">
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p>★</p>
+                                </div>
+                            </td>
+                            <td>Utilisation de JS et de bootstrap</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">PHP</th>
+                            <td>
+                                <div class="col d-inline-flex">
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p>★</p>
+                                </div> 
+                            </td>
+                            <td>+ Utilisation de Twig et Composer</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Assembleur 80/86</th>
+                            <td>
+                                <div class="col d-inline-flex">
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>C</th>
+                            <td>
+                                <div class="col d-inline-flex">
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                </div>
+                            </td>
+                            <td>Quelques notions de C++</td>
+                        </tr>
+                        <tr>
+                            <th>Java</th>
+                            <td>
+                                <div class="col d-inline-flex">
+                                    <p class="coulour">★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>MySQL</th>
+                            <td>
+                                <div class="col d-inline-flex">
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                </div> 
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Python</th>
+                            <td>
+                                <div class="col d-inline-flex">
+                                    <p class="coulour">★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-muted">Outils utilisés</h3>
+                <table class="table table-bordered align-middle">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Skills</th>
+                            <th scope="col">Remarques supplémentaires<!--  <a href="#skill" title="Les notations ne correspondent pas a celles du CV car il est plus compliqué de faire des 3/4 d'étoiles, par conséquent la notation est sur 5★"><i class="fa fa-info-circle fa-1" aria-hidden="true"></i></a> -->
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Sublim Text 3</th>
+                            <td>
+                                <div class="col d-inline-flex">
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p>★</p>
+                                </div>
+                            </td>
+                            <td>A été utilisé pour la réalisation de ce site</td>
+                        </tr>
+                        <tr>
+                            <th>Eclipse IDE</th>
+                            <td>
+                                <div class="col d-inline-flex">
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                </div>
+                            </td>
+                            <td>Manié avec Java Fx</td>
+                        </tr>
+                        <tr>
+                            <th>Code::Block</th>
+                            <td>
+                                <div class="col d-inline-flex">
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Lazarus</th>
+                            <td>
+                                <div class="col d-inline-flex">
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                </div>
+                            </td>
+                            <td>Réalisation d'interfaces graphiques</td>
+                        </tr>
+                        <tr>
+                            <th>Word, Excel, PowerPoint</th>
+                            <td>
+                                <div class="col d-inline-flex">
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p>★</p>
+                                </div>
+                            </td>
+                            <td>Ses variantes libres (comme LibreOffice sont aussi maîtrisés)</td>
+                        </tr>
+                        <tr>
+                            <th>Github</th>
+                            <td>
+                                <div class="col d-inline-flex">
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>GIMP 2</th>
+                            <td>
+                                <div class="col d-inline-flex">
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>Premiere Pro CC</th>
+                            <td>
+                                <div class="col d-inline-flex">
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p class="coulour">★</p>
+                                    <p>★</p>
+                                    <p>★</p>
+                                </div>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <!-- /END THE FEATURETTES -->
+</div><!-- /.container -->
+<footer class="footer mt-2 py-1 bg-dark">
+    <div class="container text-center">
+        <span class="text-light">Site réalisé par ZANNIER Chloé.</span>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+</script>
+<script src="https://kit.fontawesome.com/0383df481c.js" crossorigin="anonymous"></script>
+<!-- enable popopers -->
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+  })
+    var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+      trigger: 'focus'
+  })
+</script>
 </body>
 </html>

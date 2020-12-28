@@ -21,7 +21,7 @@ body {
 a {
   color: #0080ff;
 }
-@media (min-width: 990px) {
+@media (min-width: 992px) {
   .container {
    width: 950px; 
    padding-top: 1%;
@@ -38,6 +38,12 @@ a {
 .card-text{
   text-align: justify;
 }
-.bot{
-  bottom: 1rem;
+
+/*size of img cards */
+@media (min-width: 992px){
+  .card-img-top{
+    height: 200px;
+    width: 100%;
+  }
 }
+

@@ -10,6 +10,11 @@
     <link rel="icon" href="https://avatars2.githubusercontent.com/u/63238911?s=400&u=32d4cd07ded818e035996957ad31ce76636a9dbb&v=4" type="image/x-icon">
 
     <link rel ="stylesheet" href="../style/style.css"/>
+    <style type="text/css">
+        .card-img-top{
+            height: 17vw;
+        }
+    </style>
 </head>
 
 <body>
@@ -42,27 +47,27 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-sm-6 mt-2">
+            <div class="col-md-6 mt-2">
                 <div class="card h-100">
                     <a href="https://chloe025.github.io/TPE_VR/" target="_blank">
-                        <img src="../img/TPE_accueil.PNG" alt="Image d'accueil de mon TPE sur la VR" class="card-img-top" href="https://chloe025.github.io/TPE_VR/">
+                        <img src="../img/TPE_accueil.png" alt="Image d'accueil de mon TPE sur la VR" class="card-img-top" href="https://chloe025.github.io/TPE_VR/">
                     </a>
                     <div class="card-body d-flex flex-column">
-                        <h3 class="card-title">TPE "La Réalité Virtuelle</h3>
+                        <h3 class="card-title">TPE "La Réalité Virtuelle"</h3>
                         <h4>Cliquez sur l'image pour accéder au site</h4>
-                        <p class="card-text">Voici mon site réalisé dans le cadre de mes Travaux Personnels Encadrés en classe de Première Scientifique, réalisé en janvier 2018. Le sujet devait traiter de mathématiques et de physique-chimie, portant sur le sujet "La Réalité Virtuelle</p>
-                        <a href="#" class="btn btn-info mt-auto">Plus d'informations</a>
+                        <p class="card-text">Voici mon site réalisé dans le cadre de mes Travaux Personnels Encadrés en classe de Première Scientifique, réalisé en janvier 2018. Le sujet devait traiter de mathématiques et de physique-chimie, portant sur le sujet "La Réalité Virtuelle".</p>
+                        <button type="button" class="btn btn-info mt-auto" data-bs-toggle="modal" data-bs-target="#modal1">Lisez-en plus</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-6 mt-2">
+            <div class="col-md-6 mt-2">
                 <div class="card h-100">
-                    <img src="../img/projet_bac_picture.PNG" class="card-img-top">
+                    <img src="../img/projet_bac_picture.png" class="card-img-top">
                     <div class="card-body d-flex flex-column">
                         <h3 class="card-title">Projet BAC</h3>
-                        <p class="card-text">Voici mon projet de BAC, réalisé en Python, durant mon année de Terminale en 2019. Il contient deux jeux, un jeu de mathématiques et un quiz sur la série britannique Doctor Who</p>
-                        <a href="#" class="btn btn-info mt-auto">Plus d'informations</a>
+                        <p class="card-text">Voici mon projet de BAC, réalisé en Python, durant mon année de Terminale en 2019. Il contient deux jeux, un jeu de mathématiques et un quiz sur la série britannique Doctor Who.</p>
+                        <button type="button" class="btn btn-info mt-auto" data-bs-toggle="modal" data-bs-target="#modal2">Lisez-en plus</button>
                     </div>
                 </div>
 
@@ -70,14 +75,133 @@
         </div>
     </div>
     <hr>
+    <!-- Modal1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="ModalLabelTPE" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">TPE : La Réalité Virtuelle</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Durant la classe de Première Scientifique en 2018, nous avons du réaliser nos TPE (Travaux Personnels Encadrés) sur un thème au choix, portant sur les mathématiques et la physique-chimie.
+                        Nous étions 3, et avons décidés de traiter le sujet de la Réalité Virtuelle.<br>
+                        Nous avons réparti le travail en 3 parties : son fonctionnement (ma partie), les dispositifs et l'immersion, ainsi qu'une partie traitant des effets secondaires et des différents casques.<br>
+                        Pour la présentation, j'ai décidé de mettre en pratique mes cours "d'Informatique et Création Numérique", option que j'ai choisi dans un site "dossier" et un autre "présentation" avec le texte et les images plus grandes. Sur l'image de la card, vous pouvez acceder au site dossier.<br>
+                        Malheuresement, durant ces TPE un élève à changé de lycée, nous laissant plus que 2. Le restant, peu interessé par les études n'a pas contribué au projet malgré mes demandes. Par conséquent, j'ai effectué ce TPE seule, au lieu d'être 3 personnes. <br><br>
+                        <span style="text-decoration: underline;">Ce que ce TPE m'a apporté :</span> Grâce à lui, j'ai pu mettre en pratique mes -modestes- connaissances du language HTML et CSS. Il m'a aussi permis d'apprendre le fonctionnement d'un casque de VR, les effets des écrans, et m'a surtout appris à être autonome.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="ModalLabelProjetBac" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel">Projet BAC</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+                <div class="modal-body">
+                    <p>Dans le cadre de ma spécialité "Informatique et Sciences du Numérique, nous avons du réaliser un jeu ou application en Python, en binômes. Par conséquent, avec mon partenaire nous avons décidé de réaliser un jeu, assez simple mais étant pour les "vrais matheux". À quelques jours de la date de rendu, je me suis lancée un défi : réaliser un deuxième jeu inclu dans le projet. J'ai donc décidé de réaliser un quiz sur la très célèbre série britannique Doctor Who.  <br>
+                        <span style="text-decoration:underline;">But du jeu :</span> 
+                        <ul>
+                            <li>Pour le jeu de maths, le principe est simple : cliquer avec click-gauche sur les nombres premiers, et click droit sur les autres nombres. Vous avez une minute pour obtenir le plus de bonnes réponses, sachant qu'une mauvaise réponse retire 2 points.</li>
+                            <li>Pour le quiz, il s'agit d'un simple questionnaire à choix simple ou multiple portant sur Doctor Who. On ne recoit pas de point si on se trompe sur les réponses validées.</li>
+                        </ul>
+                        J'ai presque réalisé tout le projet, mon binôme n'était pas très interressé par l'informatique. Cependant, il a réalisé le menu principal et m'a donné son avis sur mes choix graphiques et musicaux.<br>
 
+                        <span style="text-decoration:underline;">Ce que ce projet m'a apporté :</span> Grâce à ce projet, j'ai pu réaliser que la programmation était un domaine qui m'interressait vraiment. Ce fut mon premier projet, et c'est à ce moment que j'ai apprécié developper. J'y ai commis mes premières erreurs, et j'ai appris grâce à cela. Avec le recul, je me rends compte des optimisations possibles, de la mauvaise organisation de mon code, et des améliorations possibles à ce projet.
+                        Le quiz a été fait sur un coup de tête, et je ne le regrette pas. J'ai pu manier des listes et ainsi mieux comprendre leur fonctionnement.<br>
+
+                        <span style="text-decoration: underline;">La notation :</span> Nous avons été notés sur notre projet, sa réalisation, si le projet fonctionne ou non, la répartiion du travail, et la plus grande partie : la soutenance pour voir si nous avions vraiment compris ce que nous codions.<br>
+
+                        <span style="text-decoration: underline;">Images :</span>
+                        <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Vous pouvez cliquer sur les images pour les ouvrir dans une autre page en plus grand"><i class="fa fa-info-circle fa-1" aria-hidden="true"></i></a>
+                    </p>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <figure>
+                                    <a href="../img/accueil_projetBac1.JPG" target="_blank" class="figure-img img-fluid rounded"><img class="w-100" src="../img/accueil_projetBac1.JPG"></a>
+                                    <figcaption class="figure-caption text-center">Accueil des jeux</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <figure>
+                                    <a href="../img/accueil_projetBac.JPG" target="_blank" class="figure-img img-fluid rounded"><img class="w-100" src="../img/accueil_projetBac.JPG"></a>
+                                    <figcaption class="figure-caption text-center">Menu du jeu Maths, avant le départ</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <figure>
+                                    <a href="../img/projet_bac_picture.PNG" target="_blank" class="figure-img img-fluid rounded"><img class="w-100" src="../img/projet_bac_picture.PNG"></a>
+                                    <figcaption class="figure-caption text-center">Jeu en cours</figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <figure>
+                                    <a href="../img/fin_partie_projetBAC.JPG" target="_blank" class="figure-img img-fluid rounded"><img class="w-100" src="../img/fin_partie_projetBAC.JPG"></a>
+                                    <figcaption class="figure-caption text-center">Fin du jeu et score</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <figure>
+                                <a href="../img/dw_fond_projBAC.JPG" target="_blank" class="figure-img img-fluid rounded"><img class="w-100" src="../img/dw_fond_projBAC.JPG"></a>
+                                <figcaption class="figure-caption text-center">Quiz doctor who</figcaption>
+                            </figure>
+                        </div>
+                        <div class="row">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="../img/jeu_demo_bac.mp4" allowfullscreen></iframe>
+                            </div>
+                            <p class="figure-caption text-center">Vidéo du jeu des nombres premiers. Lors de l'enregistrement, le message de fin est affiché dans une nouvelle fenetre, par conséquent, il n'a pas été affiché durant la vidéo.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <footer class="footer mt-2 py-1 bg-dark">
         <div class="container text-center">
             <span class="text-light">Site réalisé par ZANNIER Chloé.</span>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
     <script src="https://kit.fontawesome.com/0383df481c.js" crossorigin="anonymous"></script>
+    <!-- enable popopers -->
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+      })
+        var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+          trigger: 'focus'
+      })
+  </script>
+
+  <!-- to open modals, need some JS -->
+  <script type="text/javascript">
+    var myModal = document.getElementById('myModal')
+    var myInput = document.getElementById('myInput')
+    myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+    })
+</script>
 </body>
 </html>
