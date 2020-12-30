@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Site Chloé</title>
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- web icon -->
+    <link rel="icon" href="https://avatars2.githubusercontent.com/u/63238911?s=400&u=32d4cd07ded818e035996957ad31ce76636a9dbb&v=4" type="image/x-icon">
+    <!-- my css -->
+    <link rel ="stylesheet" href="../style/style.css"/>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mon Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mes réalisations</a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="lycee.html">Lycée</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item active" href="dut.html">DUT Informatique</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">Mon CV</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Go back button & pagination -->
+    <div class="container-fluid d-flex justify-content-between mt-2">
+        <a href="dut.html" class="float-start"><button class="btn btn-light btn-circle"><i class="fa fa-arrow-left" aria-label="Back to DUT"></i></button></a>
+        <div aria-label="Page navigation" class="text-light">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="nim.html" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="proj1.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="nim.html">2</a></li>
+                <li class="page-item active"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="proj2.html">4</a></li>
+                <li class="page-item"><a class="page-link" href="cpoa.html">5</a></li>
+                <li class="page-item"><a class="page-link" href="php.html">6</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="proj2.html" aria-label="Next">
+                        <span aria-hidden="true">
+                            &raquo;
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div></div>
+    </div>
+    
+    <!-- content -->
+    <div class="container">
+        <h1 class="text-center text-light">Projet Assembleur : Morpion ou Tic-Tac-Toe</h1>
+        <hr>
+        <div class="embed-responsive embed-responsive-21by9">
+            <iframe class="" src="../img/Morpion.mp4" allowfullscreen></iframe>
+        </div>
+        <hr>
+        <p class="text-justify">
+            Le projet d'Assembleur, un projet très redouté par la complexité du language mais finalement que j'ai trouvé amusant et pas aussi difficile que cela. Découvrir un des languages de bas-niveau fut très enrichissant pour moi.<br>
+            Durant le 2ème semestre, on nous a demandé de réaliser un jeu en langage Assembleur Inter 80/86 par binômes. Avec mon partenaire, nous avions décidé de réaliser un morpion, jeu qui se joue à deux. 
+            <br><br>
+            <span style="text-decoration: underline;">Pourquoi un morpion ?</span><br>
+            Une des raisons est pour l'originalité : beaucoup de nos connaissances avaient décidé de réaliser des jeux comme Snake, donc nous voulions pas faire la même chose.<br>
+            Ensuite, c'est un jeu qui peut se jouer à 2, et c'est une fonctionnalité que nous apprécions.<br>
+            La dernière raison était surtout que nous voulions pas faire quelque chose de trop compliqué, car on ne pensait pas réussir ce language, que je trouvais compliqué à son début. Pour nous, le plus important était d'avoir un jeu qui fonctionne correctement, plutôt que rien du tout.<br>
+            <br>
+            <span style="text-decoration:underline;">Ce que cela m'a apporté :</span><br> 
+            Le langage Assembleur est particulier, surtout quand on débute. Ce projet et les cours associés m'ont permis de mieux comprendre le fonctionnement d'un PC, car ce language est directement compris par le microprocesseur. <br>
+            Pour faire court, ce projet était important pour avoir un meilleur regard sur l'informatique et le codage. Car ce language, le principe de l'assembleur est à l'origine des premiers programmes. De plus, j'ai pu alors avoir l'occasion de travailler dans un environnement totalement inconnu, j'ai du rechercher par moi-même les instructions nécessaires au bon déroulement du projet. J'ai en quelque sorte aquis une meilleure autonomie.<br>
+            <br>
+            <span style="text-decoration:underline;">Répartition du travail :</span><br>
+            J'ai fait la grande majorité des instructions de ce programme, même si mon partenaire m'a grandement aidée à mener ce projet à terme.
+            <br>
+        </p>
+        <p><span style="text-decoration: underline;">Où trouver le projet ?</span> Sur mon github, <a href="https://github.com/chloe025/projet_assembleur" target="_blank">ici</a> !</p>
+    </div>
+
+
+
+    <footer class="footer mt-2 py-1 bg-dark">
+        <div class="container text-center">
+            <span class="text-light">Site réalisé par ZANNIER Chloé.</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/0383df481c.js" crossorigin="anonymous"></script>
+    <!-- enable popopers -->
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+      })
+        var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+          trigger: 'focus'
+      })
+  </script>
+
+</body>
+</html>

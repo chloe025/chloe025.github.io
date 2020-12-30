@@ -15,7 +15,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="haut">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Mon Site</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,9 +57,9 @@
             <div class="carousel-item active one">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Bonjour ! Je suis Chloé</h1>
+                        <h1>Bonjour ! Je suis Chloé ZANNIER</h1>
                         <hr>
-                        <p>Dans ce petit carousel Bootstrap, je vais me présenter. Vous pouvez descendre ou cliquer sur les boutons du carousel pour avoir davantage d'informations !</p>
+                        <p>Dans ce petit carousel Bootstrap, je vais me présenter. Vous pouvez descendre ou bien cliquer sur les boutons du carousel pour avoir davantage d'informations !</p>
                         <p>Vous pouvez sinon télécharger mon CV sur ce bouton !</p>
                         <a class="btn btn-lg btn-info mt-5" href="../img/cv_zannier.pdf" target="_blank" download role="button">Téléchargez-moi</a>
                     </div>
@@ -70,7 +70,7 @@
                     <div class="carousel-caption text-dark">
                         <h1>Présentation rapide</h1>
                         <hr>
-                        <p class="d-none d-md-block">J'ai 19ans, bientôt 20 en août prochain. Je vis dans un petit village perdu en Moselle nommé Ottonville, où il y a plus d'animaux que d'habitants. <br>
+                        <p class="d-none d-md-block">J'ai 19 ans, bientôt 20 en août prochain. Je vis dans un petit village perdu en Moselle nommé Ottonville, où il y a plus d'animaux que d'habitants. <br>
                         Je suis une personne curieuse et assez calme, aimant toujours apprendre de nouvelles choses</p>
                         <p><a class="btn btn-lg btn-info mt-5" href="#me" role="button">Ma présentation</a></p>
                     </div>
@@ -78,18 +78,30 @@
             </div>
             <div class="carousel-item three">
                 <div class="container">
-                    <div class="carousel-caption text-dark">
+                    <!-- hide on screns smaller than MD -->
+                    <div class="carousel-caption d-none d-md-block text-white rounded" style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))">
                         <h1>Mes études</h1>
                         <hr>
-                        <div class="d-none d-md-block">
-                            <h3>DUT Informatique (2019-2021)</h3>
-                            <p>Je suis actuellement en 2ème année de DUT Informatique à l'IUT de Metz, en Lorraine. Je fus première et cinquième de promotion la première année. <br>
-                            J'ai pu apprendre les bases du développement d'applications, de développement web et plein d'autres choses plus précises !</p>
-                            <h3>Lycée (2019)</h3>
-                            <p>J'ai obtenu mon BAC Scientifique option "Informatique et Sciences du Numérique" en 2019, mention     Bien. J'y ai découvert les bases de l'informatique, et de la programmation web.</p> 
-                        </div>
-                        <p><a class="btn btn-lg btn-info" href="#etudes" role="button">Voir les détails de mes études</a></p>
-                    </div>
+                        <h3>DUT Informatique (2019-2021)</h3>
+                        <p>
+                            Je suis actuellement en 2ème année de <a href="http://iut-metz.univ-lorraine.fr/dut-informatique" target="_blank">DUT Informatique</a> à l'<a href="http://iut-metz.univ-lorraine.fr/" target="_blank">IUT de Metz</a>, en Lorraine. Je fus première et cinquième de promotion la première année. <br>
+                            J'ai pu apprendre les bases du développement d'applications, de développement web et plein d'autres choses plus précises !
+                        </p>
+                        <h3>Lycée (2019)</h3>
+                        <p>
+                            J'ai obtenu mon BAC Scientifique option "Informatique et Sciences du Numérique" en 2019, mention Bien. J'y ai découvert les bases de l'informatique, et de la programmation web.
+                        </p> 
+                        <p>
+                            <a class="btn btn-lg btn-info" href="#etudes" role="button">Voir les détails de mes études</a>
+                        </p>
+                    </div>   
+                    <!-- only on screens smaller than MD -->
+                    <div class="carousel-caption d-md-none">
+                        <h1>Mes études</h1>
+                        <p>
+                            <a class="btn btn-lg btn-info" href="#etudes" role="button">Voir les détails de mes études</a>
+                        </p>
+                    </div> 
                 </div>
             </div>
             <div class="carousel-item four">
@@ -97,7 +109,8 @@
                     <div class="carousel-caption text-dark">
                         <h1>Mes loisirs</h1>
                         <hr>
-                        <p class="d-none d-md-block">En dehors du développement, j'ai plusieurs autres loisirs. J'essaie de m'interesser à tout et apprécie apprendre de nouvelles choses chaque jours.<br>
+                        <p class="d-none d-md-block">
+                            En dehors du développement, j'ai plusieurs autres loisirs. J'essaie de m'interesser à tout et apprécie apprendre de nouvelles choses chaque jours.<br>
                             Je m'intéresse beaucoup à la géologie et au volcanisme, mais aussi aux sciences en général. J'aime beaucoup jouer aux jeux vidéos, que ce soit seule, avec mes amis ou des inconnus du monde entier.<br>
                             Sinon j'apprécie beaucoup la compagnie de divers romans, qui peuvent me tenir occupée pendant plusieurs jours.
                         </p>
@@ -113,11 +126,11 @@
                         <hr>
                         <p>Je suis titulaire depuis 2015 du Certificat de Prévention et Secours Civiques de niveau 1. Par conséquent, je suis capable d'effectuer les gestes de premiers secours.<br>
                             Je possède également le Cambridge English Certificate de niveau B2.<br>
-                            J'ai le permis voiture depuis 2019 ainsi que le permis piéton depuis mes 7 ans.
+                            J'ai le permis piéton depuis mes 7ans, le permis vélo depuis la même période ainsi permis voiture depuis 2019.
                         </p>
                         <h1>Langues parlées</h1>
                         <hr>
-                        <p>J'ai le niveau B2 en anglais, et quelques notions d'allemand
+                        <p>J'ai le niveau B2 en anglais, et j'ai quelques notions d'allemand
                         </p>
                     </div>   
                     <!-- only on screens smaller than MD -->
@@ -130,7 +143,7 @@
                         </p>
                         <h1>Langues parlées</h1>
                         <hr>
-                        <p>J'ai le niveau B2 en anglais, et quelques notions d'allemand
+                        <p>J'ai le niveau B2 en anglais, et connait quelques notions d'allemand
                         </p>
                     </div>                     
                 </div>
@@ -168,8 +181,9 @@
                     <p class="lead">Chloé ZANNIER</p>
                 </div>
                 <div class="bg-dark shadow-sm mx-auto text-light  pt-2" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                    <p>Je suis une étudiante en 2<sup>ème</sup> année de DUT Informatique à l'Université de Lorraine. <br>
-                        Ce que j'apprécie le plus dans cette discipline est la gestion d’un projet de A à Z (je suis toujours en constante recherche d’optimisation + résolution de problèmes). C'est en partie grâce à cela que j’ai pu réaliser différents projets en Assembleur, en Web ou encore en C. <br><br>
+                    <p>Je suis une étudiante en 2<sup>ème</sup> année de <a href="http://iut-metz.univ-lorraine.fr/dut-informatique" target="_blank">DUT Informatique</a> à l'<a href="https://www.univ-lorraine.fr/" target="_blank">Université de Lorraine</a>. <br>
+                        [...]
+                        <br><br>
                         Moyens de contact : <br><br>
                         <i class="fa fa-map-marker" aria-hidden="true"></i> 11 rue de Mazerolles, Ottonville, 57220<br>
                         <i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:zannierchloe@gmail.com" class="text-white">zannierchloe@gmail.com</a><br>
@@ -185,8 +199,8 @@
         <div class="row featurette" id="etudes">
             <div class="col-md-8">
                 <h2 class="featurette-heading mt-0">Mes études <br><span class="text-muted">Diplôme Universitaire Technologique (DUT) d'Informatique à Metz (2019-2021)</span></h2>
-                <p class="lead text-justify">Durant ces deux années de DUT informatique à l'IUT de metz, j'ai pu assimiler de nombreuses connaissances.<br>
-                    J'ai pu aquérir de bonnes bases en algorithmie, que j'ai pu mettre en pratique lors de différents projets, que vous pouvez voir sur la page de mes <a href="#">réalistations</a>. J'ai pu faire de la programmation web, en HTML, CSS, PHP et un peu de JavaScript. En autodidacte, je me suis orientée vers le Bootstrap 4 pour completer mes connaissances dans ce domaine. J'ai aussi eu des cours de programmation orientée objet, et de gestions de bases de données à l'aide de MySQL. En première année, j'ai eu la chance de suivre des cours d'Assembleur, qui m'ont permise de mieux comprendre le fonctionnement de nos machines, car il s'agit d'un langage de bas niveau, composé d'instructions directement compréhensibles par le microprocesseur. <br> Nous avons aussi pu avoir des cours de réseau, nous donnant les bases des adressages TCP-IP, de routage et de fonctionnement de réseaux informatiques.<br>
+                <p class="lead text-justify">Durant ces deux années de <a href="http://iut-metz.univ-lorraine.fr/dut-informatique" target="_blank">DUT Informatique</a> à l'<a href="http://iut-metz.univ-lorraine.fr/" target="_blank">IUT de Metz</a>, j'ai pu assimiler de nombreuses connaissances.<br>
+                    J'ai pu aquérir de bonnes bases en algorithmie, que j'ai pu mettre en pratique lors de différents projets, que vous pouvez voir sur la page de mes <a href="#top">réalistations</a>. J'ai pu faire de la programmation web, en HTML, CSS, PHP et un peu de JavaScript. En autodidacte, je me suis orientée vers le Bootstrap 4 pour completer mes connaissances dans ce domaine. J'ai aussi eu des cours de programmation orientée objet, et de gestions de bases de données à l'aide de MySQL. En première année, j'ai eu la chance de suivre des cours d'Assembleur, qui m'ont permise de mieux comprendre le fonctionnement de nos machines, car il s'agit d'un langage de bas niveau, composé d'instructions directement compréhensibles par le microprocesseur. <br> Nous avons aussi pu avoir des cours de réseau, nous donnant les bases des adressages TCP-IP, de routage et de fonctionnement de réseaux informatiques.<br>
                     Pour parfaire nos connaissances en informatique, j'ai pu avoir des cours d'économie, de droit, de mathématiques et d'expression & communications pour agrandir nos domaines de connaissances. Par conséquent, je dispose de notions dans plusieurs domaines différents, ce qui me permet de comprendre mon environnement et de m'adapter plus rapidement. 
                 </p>
             </div>
@@ -205,7 +219,7 @@
                 <h2 class="text-muted">BAC S à Félix Mayer à Creutzwald (2019) </h2>
                 <p class="lead text-justify">
                     J'ai obtenu mon Baccalauréat Scientifique option "Informatique et Sciences du Numérique" en 2019, avec une mention Bien.<br>
-                    C'est à ce moment là que j'ai commencé l'informatique : en classe de Première, j'ai choisi l'option "Informatique et Création Numérique" par curiosité et dans le but de découvrir un nouveau domain qui m'interessait. J'ai appris le HTML 5 et le CSS 3, et j'avais essayé de faire du JavaScript en autodidacte. Je me suis servie de mes connaissances apprises pour développer mon site de soutenance de TPE (Travaux Personnels Encadrés), disponible aussi dans mes réalisations. En classe de Terminale, j'ai choisi d'en faire ma spécialité pour l'épreuve du BAC. Nous avons du réaliser un jeu en language Python, ce qui m'a permit d'aquérir rapidement des bases d'algorithmie et de travail en équipe.
+                    C'est à période que j'ai commencé l'informatique : en classe de Première, j'ai choisi l'option "Informatique et Création Numérique" par curiosité et dans le but de découvrir un nouveau domaine qui m'interessait. J'y ai appris le HTML 5 et le CSS 3, et j'avais essayé de faire du JavaScript en autodidacte. Je me suis servie de mes connaissances apprises pour développer mon site de soutenance de TPE (Travaux Personnels Encadrés), disponible aussi dans mes sur ce <a href="https://chloe025.github.io/TPE_VR/" target="_blank">lien</a> ou dans les <a href="lycee.html">réalisations de lycée</a>. En classe de Terminale, j'ai choisi d'en faire ma spécialité pour l'épreuve du BAC. Nous avons du réaliser un jeu en language Python, ce qui m'a permit d'aquérir rapidement des bases d'algorithmie et de travail en équipe.
                 </p>
             </div>
             <div class="col-md-5 order-md-1">
@@ -220,7 +234,7 @@
             <div class="col-md-5 order-md-2">
                 <h2 class="featurette-heading mt-0">Mes loisirs</h2>
                 <p class="lead text-justify">
-                    En dehors du développement, j'ai d'autres loisirs. Le premier est le jeu vidéo : c'est principalement grâce à lui que je me suis intéressée à l'informatique. J'apprécie passer du temps à jouer, que ce soit seule ou avec mes amis, qui sont même parfois à l'autre bout du monde. <br>
+                    En dehors du développement, j'ai d'autres loisirs. Le premier est le jeu vidéo : c'est principalement grâce à lui que je me suis intéressée à l'informatique car je voulais avoir une idée de comment un jeu pouvait être fait, de comment "des lignes de code peuvent permettre à un personnage de bouger". J'apprécie passer du temps à jouer, que ce soit seule ou avec mes amis, qui sont même parfois à l'autre bout du monde. <br>
                     Je m'interesse aussi aux sciences, notemment à la biologie depuis le lycée ainsi qu'à la géologie que j'apprécie énormément.<br>
                     Un dernir loisir : la lecture. Souvent, j'entends dire que jeux vidéos et lire des livres ne vont pas ensemble, mais je suis convaincue du contraire. J'adore lire des romans, car ils me permettent d'apprendre du vocabulaire, mais aussi me transportent dans un autre monde pendant quelques temps, au même titre que le gaming.
                 </p>
@@ -235,7 +249,7 @@
 
             </div>
             <div class="col-md-3 order-md-3">
-             <div class="row">
+               <div class="row">
                 <img src="https://cdn.pixabay.com/photo/2018/11/07/20/13/northern-ireland-3801174_960_720.jpg" class="img-thumbnail" alt="chaussée des géants (Giant Causeway), en Irlande">
             </div>
             <div class="row">

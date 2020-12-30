@@ -20,6 +20,7 @@ body {
 
 a {
   color: #0080ff;
+  font-weight: bold;
 }
 @media (min-width: 992px) {
   .container {
@@ -47,3 +48,33 @@ a {
   }
 }
 
+
+/*Pagination*/
+.pagination > li > a
+{
+    background-color: white;
+    color: #343a40;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #6c757d;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: #6c757d !Important;
+    border: solid 1px #6c757d !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #6c757d !Important;
+    border: solid 1px #6c757d;
+}
