@@ -36,7 +36,7 @@ a {
  }
 }
 
-.card-text{
+.card-text, .modal-body{
   text-align: justify;
 }
 
