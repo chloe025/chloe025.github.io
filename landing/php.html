@@ -43,7 +43,9 @@
     </nav>
     <!-- Go back button & pagination -->
     <div class="container-fluid d-flex justify-content-between mt-2">
-        <a href="dut.html" class="float-start"><button class="btn btn-light btn-circle"><i class="fa fa-arrow-left" aria-label="Back to DUT"></i></button></a>
+        <a href="dut.html" class="float-start" title="retour à la page des réalisations">
+            <button class="btn btn-light btn-circle"><i class="fa fa-arrow-left" aria-label="Back to DUT"></i></button>
+        </a>
         <div aria-label="Page navigation" class="text-light">
             <ul class="pagination">
                 <li class="page-item">
@@ -51,11 +53,11 @@
                         <span aria-hidden="true">&laquo;</span>
                     </a>
                 </li>
-                <li class="page-item"><a class="page-link" href="proj1.html">1</a></li>
-                <li class="page-item"><a class="page-link" href="nim.html">2</a></li>
-                <li class="page-item"><a class="page-link" href="assembl.html">3</a></li>
-                <li class="page-item"><a class="page-link" href="proj2.html">4</a></li>
-                <li class="page-item"><a class="page-link" href="cpoa.html">5</a></li>
+                <li class="page-item"><a class="page-link" title="site années 80" href="proj1.html">1</a></li>
+                <li class="page-item"><a class="page-link" title="jeu nim" href="nim.html">2</a></li>
+                <li class="page-item"><a class="page-link" title="projet assembleur" href="assembl.html">3</a></li>
+                <li class="page-item"><a class="page-link" title="site anciens étudiants" href="proj2.html">4</a></li>
+                <li class="page-item"><a class="page-link" title="projet cpoa" href="cpoa.html">5</a></li>
                 <li class="page-item active"><a class="page-link" href="#">6</a></li>
                 <li class="page-item disabled">
                     <a class="page-link" href="#" aria-label="Next">
@@ -71,7 +73,12 @@
     
     <!-- content -->
     <div class="container">
-        <h1 class="text-center text-light">Projet programmation web : Site de news</h1>
+        <h1 class="text-center text-light">Projet programmation web : Site de news
+            <span style="font-size: 12px">
+                <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-content="Vous pouvez cliquer sur les images pour les voir en plus grand">  <i class="fa fa-info-circle fa-1" aria-hidden="true"></i>
+                </a>
+            </span>
+        </h1>
         <hr>
         <div class="row">
             <div class="col-lg-6">
@@ -103,21 +110,21 @@
         </div>
         <hr>
         <p class="text-justify">
-            Le site de news est le dernier projet terminé pour le moment. Il doit permettre de se connecter, se déconnecter, trier, ajouter des news à l'aide de PHP mais sans utiliser de frameworks ou librairies. 
+            À l'heure actuelle, le site de news est le dernier projet achevé. Il doit permettre de se connecter, se déconnecter, trier, ajouter des news à l'aide de PHP mais sans utiliser de frameworks ou librairies. 
             <br><br>
             <span style="text-decoration: underline;">Le site :</span><br>
-            Le design du site n'étant pas pris en compte dans la notation, mon binôme et moi nous nous sommes alors concentré sur le Backend.<br>
-            Alors, en plus que ce qui était demandé, nous avons rajouté la possibilité de supprimer un utilisateur, de trier via recherche, et de modifier et/ou supprimer des articles. Les mots de passes sont cryptés, et nous avons pris soin d'accepter uniquement des adresses mails avec un format correcte. Nous avons aussi essayé de faire une architecture MVC la plus propre possible.
+            Le design du site n'étant pas pris en compte dans la notation, mon binôme et moi-même nous nous sommes alors concentrés sur le Back-end.<br>
+            Dans un souci d'amélioration, en plus que ce qui était demandé, nous avons rajouté la possibilité de supprimer un utilisateur, de trier via une recherche et de modifier et/ou supprimer des articles. Les mots de passe sont cryptés et nous avons pris soin d'accepter uniquement des adresses mail avec un format correct. Nous avons aussi essayé de faire une architecture MVC la plus propre possible.
             <br>
             <br>
             <span style="text-decoration:underline;">Ce que cela m'a apporté :</span><br> 
-            Ce projet m'a permis de m'excercer sur le modèle MVC. Il reste beaucoup de choses à améliorer, notemment sur l'organisation du code.<br>
-            De plus, je me suis interressée à la sécurité des sites web : faire attention aux saisies de contenu, la sécurité des mots de passes et mails,... même si je sais qu'il y a surement beaucoup de sécurités qui peuvent être ajoutées !<br>
-            J'ai aussi du réfléchir aux méthodes d'optimisation de tri, ainsi que de vérification d'existance d'une adresse mail. <br>
-            Ce projet m'a permis de me concentrer sur de nouveaux aspects, qui peuvent encore être améliorés bien entendu.<br>
+            Ce projet m'a permis de m'excercer sur le modèle MVC. Il reste beaucoup de choses à améliorer, notamment sur l'organisation du code.<br>
+            De plus, je me suis intéressée à la sécurité des sites web : faire attention aux saisies de contenu, à la sécurité des mots de passe et des mails,... même si j'ai conscience qu'il y a certainement beaucoup d'autres sécurités peuvent être ajoutées.<br>
+            J'ai aussi dû réfléchir aux méthodes d'optimisation de tri ainsi qu'aux vérifications de connexions et d'inscriptions.<br>
+            Ce projet m'a permis de me concentrer sur de nouveaux aspects qui peuvent encore être améliorés bien entendu.<br>
             <br>
             <span style="text-decoration:underline;">Répartition du travail :</span><br>
-            J'ai réalisé la majeure partie du php (vérifications de connexion, d'inscriptions, deconnexion, supression de compte, tri des news) ainsi que le MVC et le placement html. Mon binome lui a réalisé les ajouts/modif/suppressions d'articles, avec leur html. Il a aussi fait le format mobile.
+            J'ai réalisé la majeure partie du php (vérifications de connexions, d'inscriptions, déconnexions, supressions de compte, tris des news) ainsi que le MVC et le placement html. Mon binôme quant lui a réalisé les ajouts/modifications/suppressions d'articles, avec leur page html. Il a également codé le format mobile.
             <br>
         </p>
         <p><span style="text-decoration: underline;">Où trouver le projet ?</span> Sur mon github, <a href="https://github.com/chloe025/projet_php" target="_blank">ici</a> !</p>
