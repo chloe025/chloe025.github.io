@@ -39,6 +39,9 @@ a {
 .card-text, .modal-body{
   text-align: justify;
 }
+.card-subtitle{
+  margin-bottom: 20px;
+}
 
 /*size of img cards */
 @media (min-width: 992px){
